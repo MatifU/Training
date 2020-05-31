@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     uglify = require('gulp-uglify')
 
+// Compress CSS
 function minifycss(){
     return gulp.src('assets/css/*.css')
            .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -13,6 +14,7 @@ function minifycss(){
            .pipe(gulp.dest('assets/build/'));
   };
 
+// Compress JS
 function compress(){
     return  gulp.src('assets/js/*.js')
             .pipe(concat('script.js'))
@@ -24,7 +26,7 @@ function compress(){
 // Watch
 function watch(){
     gulp.watch('assets/css/*.css', minifycss);
-   gulp.watch('assets/js/*.js', compress);
+    gulp.watch('assets/js/*.js', compress);
 };
 
 gulp.task('default', gulp.series(minifycss, compress, watch)); 
