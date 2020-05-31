@@ -16,7 +16,6 @@ function minifycss(){
 function compress(){
     return  gulp.src('assets/js/*.js')
             .pipe(concat('script.js'))
-            .pipe(gulp.dest('assets/js/'))
             .pipe(rename('script.min.js'))
             .pipe(uglify())
             .pipe(gulp.dest('assets/build/'));
