@@ -15,4 +15,8 @@ If you want to retrieve just a subset, specify the lower and upper limit as quer
 
 For static website simply run 
 
+<<<<<<< HEAD
 node server.js
+=======
+node server.js
+>>>>>>> 028f0727d4b5050e1a85692ca3f2d826b88f1189
