@@ -13,10 +13,6 @@ If you want to retrieve just a subset, specify the lower and upper limit as quer
 
     http://127.0.0.1:3000/cards?_start=8&_end=12
 
-For static website simply run 
+    For static website simply run 
 
-<<<<<<< HEAD
-node server.js
-=======
-node server.js
->>>>>>> 028f0727d4b5050e1a85692ca3f2d826b88f1189
+    node server.js
